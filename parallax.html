@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body,html{
+            height: 100%;
+        }
+    table{
+        width: 100%;
+        height: 45px;
+        background-color: rosybrown;
+    }
+    table tr td.menu{
+        text-align: center;
+        width: 15%;
+        cursor: pointer;
+        border: 1px solid white;
+    }
+    table tr td.menu:hover{
+        background-color: aliceblue;
+    }
+    table tr td.empty{
+        width: 55%;
+    }
+    div.parallax{
+        background-image: url('dd.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100%;
+    }
+    div.parallaxx{
+        background-image: url('d.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100%;
+    }
+    div.footer a{
+        text-decoration: none;
+
+    }
+    div.footer{
+        background-color: rosybrown;
+    }
+   div.mysidenav{
+      position: absolute;
+      top: 150px;
+       left: -40px;
+       width: 60px;
+       height: 40px;
+   }
+   nav.menu:hover{
+       right: 0;
+   }
+   div.mysidenav a{
+      
+transition: .3s;
+background-color: rosybrown;
+text-decoration: none;
+padding: 15px;
+   }
+#home{
+    top: 20px;
+}
+#contact{
+    top: 60px;
+}
+#about{
+    top: 100px;
+}
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="menu">  Home</td>
+            <td class="menu"> Contact</td>
+            <td class="menu">About</td>
+            <td class="empty"></td>
+        </tr>
+    </table>
+<div class="mysidenav">
+    <a href="#" id="home">home</a>
+    <a href="#" id="contact">contact</a>
+    <a href="#" id="about">about</a>
+</div>
+
+    <div class="parallax"></div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere veniam alias dolorem obcaecati consectetur voluptatem labore ratione ipsum iure accusamus dicta atque repellendus incidunt eius totam, nemo iusto error rem?</div>
+    <div class="parallax"></div>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil non unde natus cupiditate repudiandae voluptatum excepturi eaque sed perspiciatis sapiente aliquam aut incidunt adipisci, quaerat, animi sint repellendus modi officiis?</div>
+    <div class="parallaxx"></div>
+    <div class="footer">
+       <a href="#"></a> go to top
+    </div>
+</body>
+</html>

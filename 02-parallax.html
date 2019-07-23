@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>parallax</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #777;
+        }
+
+        .bgimg-1,
+        bgimg-2,
+        bgimg-3 {
+            position: relative;
+            opacity: .65;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .bgimg-1 {
+            background-image: url('ddd.jpg');
+            min-height: 100%;
+        }
+
+        .bgimg-2 {
+            background-image: url('dd.jpg');
+            min-height: 100%;
+        }
+
+        .bgimg-3 {
+            background-image: url('d.jpg');
+            min-height: 100%;
+        }
+
+       
+    .bgimg-1 .caption{
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: black;
+        }
+        .bgimg-2 .caption{
+            position: absolute;
+            left: 0;
+           top: 190%;
+            width: 100%;
+            text-align: center;
+            color: black;
+        }
+        .bgimg-3 .caption{
+            position: absolute;
+            left: 0;
+           top: 320%;
+            width: 100%;
+            text-align: center;
+            color: black;
+        }
+        .content{
+            position: relative;
+            color: #111;
+            background-color: #fff;
+            text-align: center;
+            padding: 50px 80px;
+            text-align: justify;
+        }
+        .caption span.border{
+background: #111;
+color: #fff;
+padding: 18px;
+font-size: 1.5rem;
+letter-spacing: 10px;
+        }
+        h3{
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bgimg-1">
+        <div class="caption">
+            <span class="border">
+                scroll down
+            </span>
+        </div>
+    </div>
+    <div class="content">
+        <h3>parallax Demo</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, veniam! Cumque a eveniet expedita quod natus,
+            cum enim dicta fugiat, perferendis neque, repellat doloremque obcaecati voluptatibus ad nulla illo aliquid.
+        </p>
+    </div>
+    <div class="bgimg-2">
+        <div class="caption">
+            <span class="border">less height</span>
+        </div>
+    </div>
+    <div class="content">
+        <h3>parallax Demo</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, veniam! Cumque a eveniet expedita quod natus,
+            cum enim dicta fugiat, perferendis neque, repellat doloremque obcaecati voluptatibus ad nulla illo aliquid.
+        </p>
+    </div>
+    <div class="bgimg-3">
+        <div class="caption"> 
+            <span class="border">
+            hello
+            </span>
+           </div>
+    </div>
+    
+        <div class="content">
+            <h3>parallax Demo</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, veniam! Cumque a eveniet expedita quod
+                natus, cum enim dicta fugiat, perferendis neque, repellat doloremque obcaecati voluptatibus ad nulla
+                illo aliquid.</p>
+        </div>
+   
+
+</body>
+
+</html>
